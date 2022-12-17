@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpOverview.OOP
+namespace CSharpOverview.OOP.interfaces
 {
     public interface Autenticavel
     {

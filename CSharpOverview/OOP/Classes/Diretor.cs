@@ -1,11 +1,11 @@
-﻿using CSharpOverview.OOP;
+﻿using CSharpOverview.OOP.interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpOverview.OOP
+namespace CSharpOverview.OOP.Classes
 {
     public class Diretor : Funcionario, Autenticavel
     {
@@ -13,22 +13,22 @@ namespace CSharpOverview.OOP
 
         public Diretor(string nome, string cpf, double salario, string senha) : base(nome, cpf, salario)
         {
-            this.Senha = senha; 
+            Senha = senha;
         }
 
         public override double GetBonificacao()
         {
-            return this.Salario * 0.5;
+            return Salario * 0.5;
         }
 
         public override void AumentarSalario()
         {
-            this.Salario *= 1.15;
+            Salario *= 1.15;
         }
 
         public bool Autenticar(string senha)
         {
-            return this.Senha == senha;
+            return Senha == senha;
         }
 
     }

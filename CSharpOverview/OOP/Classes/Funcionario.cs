@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpOverview.OOP
+namespace CSharpOverview.OOP.Classes
 {
     public abstract class Funcionario
     {
@@ -15,9 +15,9 @@ namespace CSharpOverview.OOP
 
         public Funcionario(string nome, string cpf, double salario)
         {
-            this.Nome = nome;
-            this.Cpf = cpf;
-            this.Salario = salario;
+            Nome = nome;
+            Cpf = cpf;
+            Salario = salario;
         }
 
         public abstract double GetBonificacao();

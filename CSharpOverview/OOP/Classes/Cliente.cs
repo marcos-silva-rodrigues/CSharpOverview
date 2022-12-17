@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpOverview.Classes
+namespace CSharpOverview.OOP.Classes
 {
     public class Cliente
     {
@@ -14,9 +14,9 @@ namespace CSharpOverview.Classes
 
         public Cliente(string nome, string cpf, string profissao)
         {
-            this.Nome = nome;
-            this.Cpf = cpf;
-            this.Profissao = profissao;  
+            Nome = nome;
+            Cpf = cpf;
+            Profissao = profissao;
         }
     }
 }
